@@ -28,6 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="pass">
         <input type="submit" value="submit">
     </form>
-    <a href="./pages/signpage.php">Log In</a>
+    <a href="./../index.php">Log In</a>
 </body>
 </html>

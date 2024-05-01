@@ -6,9 +6,9 @@ $username = "";
 $userpass = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include "./src/actions/signin.php";
+    include "./src/actions/login.php";
 
-    SignIn((object)[
+    LognIn((object)[
         'name' => $_POST["username"],
         'password' => $_POST["pass"]
     ],$conn);
