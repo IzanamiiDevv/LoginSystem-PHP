@@ -23,11 +23,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>SignIn</title>
 </head>
 <body>
-    <form action="signpage.php" method="post">
-        <input type="text" name="username">
-        <input type="text" name="pass">
-        <input type="submit" value="submit">
-    </form>
+    <div>
+        <form action="signpage.php" method="post">
+            <input type="text" name="username">
+            <input type="text" name="pass">
+            <input type="submit" value="submit">
+        </form>
+    </div>
     <a href="./../index.php">Log In</a>
 </body>
 </html>
