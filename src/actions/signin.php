@@ -1,7 +1,7 @@
 <?php
-
+include "./../../db/dotenv.php";
 include "./../../db/database.php";
-
+$conn = connectDB('./../../.env');
 $username = "";
 $userpass = "";
 

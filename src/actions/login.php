@@ -1,13 +1,15 @@
 <?php
+include "./../../db/dotenv.php";
 include "./../../db/database.php";
+$conn = connectDB('./../../.env');
 $username = "";
 $userpass = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     LognIn((object)[
-        'name' => $_POST["username"],
-        'password' => $_POST["pass"]
+        'name' => $_POST["txt"],
+        'password' => $_POST["pswd"]
     ],$conn);
 }
 
