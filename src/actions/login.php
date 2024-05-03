@@ -36,7 +36,7 @@ function LognIn($data, $conn) {
     }
 
     if(search($datas, $data)){
-        echo "<script></script>";
+        echo "<script>console.log(\"Your are Now Logged In\")</script>";
     }
 }
 

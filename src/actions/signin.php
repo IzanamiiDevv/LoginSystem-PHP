@@ -32,18 +32,20 @@ function SignIn($data, $conn) {
     }
 
     if(search($usernames, $data->name)){
-        echo "$data->name Already Exist Please Enter a new one";
-        return;
+
+        header("Location: /loginsystem-php/index.php");
+        exit(); 
     }
 
     if(strlen($data->name) > 10){
-        echo "$data->name is too long Please Enter a new one";
+        header("Location: /loginsystem-php/index.php");
+        exit(); 
         return;
     }
 
     $addQuery = "INSERT INTO `users`(`name`, `password`) VALUES ('$data->name','$data->password')";
     mysqli_query($conn,$addQuery);
-    echo "Account Sucessfully Created";
+    echo "<script>console.log(\"Account Sucessfully Created\")</script>";
     
 }
 
