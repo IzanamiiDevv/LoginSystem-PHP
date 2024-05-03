@@ -9,6 +9,7 @@ include "./db/database.php";
 	<title>Slide Navbar</title>
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/index.css">
+    <script src="./src/form.js" defer></script>
 </head>
 <body>
 	<div class="main">  	
