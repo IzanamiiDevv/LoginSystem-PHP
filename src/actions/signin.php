@@ -1,5 +1,18 @@
 <?php
 
+include "./../../db/database.php";
+
+$username = "";
+$userpass = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    SignIn((object)[
+        'name' => $_POST["txt"],
+        'password' => $_POST["pswd"]
+    ],$conn);
+}
+
 function SignIn($data, $conn) {
     $sql = "SELECT * FROM `users`";
     $result = mysqli_query($conn, $sql);

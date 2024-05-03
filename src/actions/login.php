@@ -1,4 +1,15 @@
 <?php
+include "./../../db/database.php";
+$username = "";
+$userpass = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    LognIn((object)[
+        'name' => $_POST["username"],
+        'password' => $_POST["pass"]
+    ],$conn);
+}
 
 function LognIn($data, $conn) {
     $sql = "SELECT * FROM `users`";
