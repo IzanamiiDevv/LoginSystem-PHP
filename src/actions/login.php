@@ -38,7 +38,7 @@ function LognIn($data, $conn) {
     }
 
     if(search($datas, $data)){
-        echo "<script>console.log(\"Your are Now Logged In\")</script>";
+        header("Location: /loginsystem-php/pages/codego.html");
     }
 }
 
