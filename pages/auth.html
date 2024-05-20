@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="title">Codego: Sign up</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/index.css">
+    <script src="./src/entry.js" defer></script>
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="./src/actions/signin.php" method="post">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button id="signup">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="./src/actions/login.php" method="post">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button id="login">Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
